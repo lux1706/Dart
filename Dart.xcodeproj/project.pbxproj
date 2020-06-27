@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E893FE715B8E70C18E3B202 /* libPods-Dart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 927DF2BC240D257D395C9BC3 /* libPods-Dart.a */; };
 		D535568E24A7988C00AC4343 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D535568D24A7988C00AC4343 /* AppDelegate.swift */; };
 		D535569724A7988E00AC4343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D535569624A7988E00AC4343 /* Assets.xcassets */; };
 		D535569A24A7988E00AC4343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D535569824A7988E00AC4343 /* LaunchScreen.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		927DF2BC240D257D395C9BC3 /* libPods-Dart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dart.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D535568A24A7988C00AC4343 /* Dart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D535568D24A7988C00AC4343 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D535569624A7988E00AC4343 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		D53556B024A79A4A00AC4343 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D53556B124A79A4A00AC4343 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		D53556B224A79A4A00AC4343 /* HomeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
+		E4BEC846E775A95E7B28A6C6 /* Pods-Dart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dart.debug.xcconfig"; path = "Target Support Files/Pods-Dart/Pods-Dart.debug.xcconfig"; sourceTree = "<group>"; };
+		FBC299B2D6B0B359A7BD0437 /* Pods-Dart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dart.release.xcconfig"; path = "Target Support Files/Pods-Dart/Pods-Dart.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +51,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E893FE715B8E70C18E3B202 /* libPods-Dart.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92A369E64DA8DDD344309DAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				927DF2BC240D257D395C9BC3 /* libPods-Dart.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D535568124A7988C00AC4343 = {
 			isa = PBXGroup;
 			children = (
 				D535568C24A7988C00AC4343 /* Dart */,
 				D535568B24A7988C00AC4343 /* Products */,
+				EE058405A78801CBF098CF3C /* Pods */,
+				92A369E64DA8DDD344309DAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +122,16 @@
 			path = ViperModules;
 			sourceTree = "<group>";
 		};
+		EE058405A78801CBF098CF3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4BEC846E775A95E7B28A6C6 /* Pods-Dart.debug.xcconfig */,
+				FBC299B2D6B0B359A7BD0437 /* Pods-Dart.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D535569E24A7988E00AC4343 /* Build configuration list for PBXNativeTarget "Dart" */;
 			buildPhases = (
+				682336E1B93B5A2BC9B75D7F /* [CP] Check Pods Manifest.lock */,
 				D535568624A7988C00AC4343 /* Sources */,
 				D535568724A7988C00AC4343 /* Frameworks */,
 				D535568824A7988C00AC4343 /* Resources */,
+				391191C92B04D14041C4490A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -172,6 +199,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		391191C92B04D14041C4490A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dart/Pods-Dart-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dart/Pods-Dart-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dart/Pods-Dart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		682336E1B93B5A2BC9B75D7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D535568624A7988C00AC4343 /* Sources */ = {
@@ -322,6 +391,7 @@
 		};
 		D535569F24A7988E00AC4343 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4BEC846E775A95E7B28A6C6 /* Pods-Dart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -340,6 +410,7 @@
 		};
 		D53556A024A7988E00AC4343 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBC299B2D6B0B359A7BD0437 /* Pods-Dart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

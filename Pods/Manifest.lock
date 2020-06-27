@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (5.2.1)
+  - AlamofireImage (4.1.0):
+    - Alamofire (~> 5.1)
+  - AlamofireNetworkActivityIndicator (3.1.0):
+    - Alamofire (~> 5.1)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0)
+  - AlamofireImage (~> 4.0)
+  - AlamofireNetworkActivityIndicator (~> 3.1)
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - AlamofireNetworkActivityIndicator
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
+  AlamofireNetworkActivityIndicator: 6564782bd7b9e6c430ae67d9277af01907b01ca4
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 153505fb22dd32dbda81b14ad3d184004738f701
+
+COCOAPODS: 1.8.4
