@@ -90,7 +90,7 @@ extension TrainsPresenter: TrainsPresenterInterface {
   }
   
   func trainSelected(at indexPath: IndexPath) {
-    let data = trains[indexPath.section]
+    let data = filteredTrains[indexPath.section]
     selectedTrain = data.trains[indexPath.row]
     if stations.count == 0 {
       getAllStations(type: nil)
