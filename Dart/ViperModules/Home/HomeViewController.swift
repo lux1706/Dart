@@ -19,7 +19,7 @@ final class HomeViewController: UIViewController {
   @IBOutlet var segmentedControlCenterXConstraint: NSLayoutConstraint!
   
   var presenter: HomePresenterInterface!
-  var searchController: UISearchController!
+  private var searchController: UISearchController!
   
   // MARK: - Private properties -
   private var resultsTableController: ListViewController!

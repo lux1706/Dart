@@ -22,7 +22,7 @@ enum Router: URLRequestConvertible {
   case getStationDataByCodeXML_WithNumMins(stationCode: String, numMins: Int)
   case getStationsFilterXML(stationText: String)
   
-  case getTrainMovementsXML(trainId: String, trainDate: String) //21 dec 2011
+  case getTrainMovementsXML(trainId: String, trainDate: String)
 }
 
 extension Router {

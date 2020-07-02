@@ -12,10 +12,6 @@ import UIKit
 
 final class HomeWireframe: BaseWireframe {
 
-  enum Style {
-    case stations
-    case trains
-  }
   // MARK: - Private properties -
 
   private let storyboard = UIStoryboard(name: "Home", bundle: nil)
