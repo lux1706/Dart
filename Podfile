@@ -7,8 +7,7 @@ target 'Dart' do
 
   # Pods for Dart
   pod 'Alamofire', '~> 5.0'
-  pod 'AlamofireImage', '~> 4.0'
-  pod 'AlamofireNetworkActivityIndicator', '~> 3.1'
   pod 'SVProgressHUD'
+  pod 'XMLCoder', '~> 0.11.1'
 
 end

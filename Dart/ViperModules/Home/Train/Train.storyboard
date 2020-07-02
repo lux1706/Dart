@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Train View Controller-->
+        <scene sceneID="XJ1-QA-Nrj">
+            <objects>
+                <viewController storyboardIdentifier="TrainViewController" id="zIc-eW-6fX" customClass="TrainViewController" customModule="Dart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z2g-4m-atm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IUy-F2-ScX">
+                                <rect key="frame" x="0.0" y="80" width="375" height="587"/>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eTI-Gl-9zi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tYZ-Ut-gko">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppb-Ip-FPP">
+                                                <rect key="frame" x="8" y="0.0" width="359" height="80"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ppb-Ip-FPP" firstAttribute="height" secondItem="tYZ-Ut-gko" secondAttribute="height" id="PLe-ZR-INU"/>
+                                            <constraint firstAttribute="height" constant="80" id="XUv-kt-JeF"/>
+                                            <constraint firstItem="ppb-Ip-FPP" firstAttribute="leading" secondItem="tYZ-Ut-gko" secondAttribute="leading" constant="8" id="Xr2-bf-lDt"/>
+                                            <constraint firstAttribute="trailing" secondItem="ppb-Ip-FPP" secondAttribute="trailing" constant="8" id="pI0-gY-q5D"/>
+                                            <constraint firstItem="ppb-Ip-FPP" firstAttribute="centerX" secondItem="tYZ-Ut-gko" secondAttribute="centerX" id="rZ3-Yn-QtQ"/>
+                                            <constraint firstItem="ppb-Ip-FPP" firstAttribute="centerY" secondItem="tYZ-Ut-gko" secondAttribute="centerY" id="ziq-1X-tkP"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="bottom" secondItem="IUy-F2-ScX" secondAttribute="bottom" id="UZb-Zo-RgZ"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="IUy-F2-ScX" secondAttribute="trailing" id="WVZ-4F-vpD"/>
+                            <constraint firstItem="eTI-Gl-9zi" firstAttribute="top" secondItem="3pi-N7-nbV" secondAttribute="top" id="YsQ-L3-OOO"/>
+                            <constraint firstItem="eTI-Gl-9zi" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" id="ZpI-ka-l4c"/>
+                            <constraint firstItem="IUy-F2-ScX" firstAttribute="top" secondItem="eTI-Gl-9zi" secondAttribute="bottom" id="kJc-g0-bLl"/>
+                            <constraint firstItem="eTI-Gl-9zi" firstAttribute="trailing" secondItem="3pi-N7-nbV" secondAttribute="trailing" id="nD0-5z-WFO"/>
+                            <constraint firstItem="IUy-F2-ScX" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" id="yqU-hP-qQM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3pi-N7-nbV"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="IUy-F2-ScX" id="W9q-Xd-kJM"/>
+                        <outlet property="messageLabel" destination="ppb-Ip-FPP" id="a2N-Zn-caf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rle-ol-2Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166" y="290"/>
+        </scene>
+    </scenes>
+</document>

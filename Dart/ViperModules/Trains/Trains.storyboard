@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trains-->
+        <scene sceneID="XJ1-QA-Nrj">
+            <objects>
+                <viewController storyboardIdentifier="TrainsViewController" id="zIc-eW-6fX" customClass="TrainsViewController" customModule="Dart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z2g-4m-atm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulB-s0-e4M">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5gp-4e-B97" customClass="CustomSegmentedControl" customModule="Dart" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="2" width="112" height="32"/>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="onDirectionChanged:" destination="zIc-eW-6fX" eventType="valueChanged" id="EdW-1j-9Pn"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5gp-4e-B97" firstAttribute="top" secondItem="Sjt-BA-gDp" secondAttribute="top" constant="2" id="5ax-lP-Mj5"/>
+                                    <constraint firstItem="5gp-4e-B97" firstAttribute="centerX" secondItem="Sjt-BA-gDp" secondAttribute="centerX" priority="250" id="BUe-ZW-XQ0"/>
+                                    <constraint firstAttribute="height" constant="40" id="JGd-hb-CDT"/>
+                                    <constraint firstItem="Sjt-BA-gDp" firstAttribute="bottom" secondItem="5gp-4e-B97" secondAttribute="bottom" constant="7" id="Tnk-Tn-bUw"/>
+                                    <constraint firstItem="5gp-4e-B97" firstAttribute="leading" secondItem="Yko-AL-DwF" secondAttribute="leading" id="rTZ-tS-4mW"/>
+                                    <constraint firstItem="5gp-4e-B97" firstAttribute="trailing" secondItem="Yko-AL-DwF" secondAttribute="trailing" id="wWi-mD-4nh"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Yko-AL-DwF"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Sjt-BA-gDp"/>
+                            </scrollView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="JRn-Hi-NOx">
+                                <rect key="frame" x="0.0" y="40" width="375" height="578"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="84" id="U7U-zp-lwx">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="84"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U7U-zp-lwx" id="sLg-Lr-avJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JRn-Hi-NOx" firstAttribute="top" secondItem="ulB-s0-e4M" secondAttribute="bottom" id="0Fl-2M-1bp"/>
+                            <constraint firstItem="JRn-Hi-NOx" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" id="0jq-C5-vaQ"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="bottom" secondItem="JRn-Hi-NOx" secondAttribute="bottom" id="6Zp-LS-NbQ"/>
+                            <constraint firstItem="ulB-s0-e4M" firstAttribute="trailing" secondItem="3pi-N7-nbV" secondAttribute="trailing" id="Uqm-9X-lMk"/>
+                            <constraint firstItem="ulB-s0-e4M" firstAttribute="top" secondItem="3pi-N7-nbV" secondAttribute="top" id="ZMV-Yd-ipc"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="JRn-Hi-NOx" secondAttribute="trailing" id="aKE-KA-wxb"/>
+                            <constraint firstItem="ulB-s0-e4M" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" id="r9D-HE-zqY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3pi-N7-nbV"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Trains" image="train" id="NgB-wH-y2r"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="directionsSegmentedControl" destination="5gp-4e-B97" id="OWp-IW-Jak"/>
+                        <outlet property="segmentedControlCenterXConstraint" destination="BUe-ZW-XQ0" id="ByN-PK-oW8"/>
+                        <outlet property="tableView" destination="JRn-Hi-NOx" id="WiY-Wc-Hio"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rle-ol-2Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-386" y="-81"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="train" width="25" height="25"/>
+    </resources>
+</document>

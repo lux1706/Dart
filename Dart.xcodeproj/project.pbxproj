@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1E893FE715B8E70C18E3B202 /* libPods-Dart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 927DF2BC240D257D395C9BC3 /* libPods-Dart.a */; };
+		D52AF72D24AD634A00C26DDF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D52AF72C24AD634A00C26DDF /* README.md */; };
 		D535568E24A7988C00AC4343 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D535568D24A7988C00AC4343 /* AppDelegate.swift */; };
 		D535569724A7988E00AC4343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D535569624A7988E00AC4343 /* Assets.xcassets */; };
 		D535569A24A7988E00AC4343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D535569824A7988E00AC4343 /* LaunchScreen.storyboard */; };
@@ -22,10 +23,36 @@
 		D53556B624A79A4A00AC4343 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53556B024A79A4A00AC4343 /* HomeViewController.swift */; };
 		D53556B724A79A4A00AC4343 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53556B124A79A4A00AC4343 /* HomeInteractor.swift */; };
 		D53556B824A79A4A00AC4343 /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53556B224A79A4A00AC4343 /* HomeWireframe.swift */; };
+		D57AC80B24A7CCE40039F9F8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57AC80A24A7CCE40039F9F8 /* ListViewController.swift */; };
+		D57AC80E24A7CDEE0039F9F8 /* ListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57AC80D24A7CDEE0039F9F8 /* ListItemCell.swift */; };
+		D57AC81024A7DB130039F9F8 /* StationDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57AC80F24A7DB130039F9F8 /* StationDataCell.swift */; };
+		D57AC81224A7E0E60039F9F8 /* ObjStationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57AC81124A7E0E60039F9F8 /* ObjStationData.swift */; };
+		D57AC81E24A94AEF0039F9F8 /* Train.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D57AC81824A94AEF0039F9F8 /* Train.storyboard */; };
+		D57AC81F24A94AEF0039F9F8 /* TrainInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57AC81924A94AEF0039F9F8 /* TrainInterfaces.swift */; };
+		D57AC82024A94AEF0039F9F8 /* TrainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57AC81A24A94AEF0039F9F8 /* TrainPresenter.swift */; };
+		D57AC82124A94AEF0039F9F8 /* TrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57AC81B24A94AEF0039F9F8 /* TrainViewController.swift */; };
+		D57AC82224A94AEF0039F9F8 /* TrainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57AC81C24A94AEF0039F9F8 /* TrainInteractor.swift */; };
+		D57AC82324A94AEF0039F9F8 /* TrainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57AC81D24A94AEF0039F9F8 /* TrainWireframe.swift */; };
+		D57AC82524A951060039F9F8 /* StationAndTrainInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57AC82424A951060039F9F8 /* StationAndTrainInfo.swift */; };
+		D57AC82724A955510039F9F8 /* ObjTrainPositions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57AC82624A955510039F9F8 /* ObjTrainPositions.swift */; };
+		D57F9E8B24AA803200E2F64C /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F9E8A24AA803200E2F64C /* Station.swift */; };
+		D57F9E8D24AA8DBB00E2F64C /* StationMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F9E8C24AA8DBB00E2F64C /* StationMarkerView.swift */; };
+		D57F9E9A24AB57D200E2F64C /* Trains.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D57F9E9424AB57D200E2F64C /* Trains.storyboard */; };
+		D57F9E9B24AB57D200E2F64C /* TrainsInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F9E9524AB57D200E2F64C /* TrainsInterfaces.swift */; };
+		D57F9E9C24AB57D200E2F64C /* TrainsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F9E9624AB57D200E2F64C /* TrainsPresenter.swift */; };
+		D57F9E9D24AB57D200E2F64C /* TrainsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F9E9724AB57D200E2F64C /* TrainsViewController.swift */; };
+		D57F9E9E24AB57D200E2F64C /* TrainsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F9E9824AB57D200E2F64C /* TrainsInteractor.swift */; };
+		D57F9E9F24AB57D200E2F64C /* TrainsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F9E9924AB57D200E2F64C /* TrainsWireframe.swift */; };
+		D5AF47CE24AC7E8F00DFCECE /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AF47CD24AC7E8F00DFCECE /* CustomSegmentedControl.swift */; };
+		D5E2622724A79B7D00469048 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E2622624A79B7D00469048 /* MainTabBar.swift */; };
+		D5E2622C24A7A53E00469048 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E2622B24A7A53E00469048 /* Router.swift */; };
+		D5E2622E24A7A54700469048 /* RailClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E2622D24A7A54700469048 /* RailClient.swift */; };
+		D5E2623124A7ADDB00469048 /* ObjStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E2623024A7ADDB00469048 /* ObjStation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		927DF2BC240D257D395C9BC3 /* libPods-Dart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dart.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52AF72C24AD634A00C26DDF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D535568A24A7988C00AC4343 /* Dart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D535568D24A7988C00AC4343 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D535569624A7988E00AC4343 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,6 +69,31 @@
 		D53556B024A79A4A00AC4343 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D53556B124A79A4A00AC4343 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		D53556B224A79A4A00AC4343 /* HomeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
+		D57AC80A24A7CCE40039F9F8 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		D57AC80D24A7CDEE0039F9F8 /* ListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCell.swift; sourceTree = "<group>"; };
+		D57AC80F24A7DB130039F9F8 /* StationDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDataCell.swift; sourceTree = "<group>"; };
+		D57AC81124A7E0E60039F9F8 /* ObjStationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjStationData.swift; sourceTree = "<group>"; };
+		D57AC81824A94AEF0039F9F8 /* Train.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Train.storyboard; sourceTree = "<group>"; };
+		D57AC81924A94AEF0039F9F8 /* TrainInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainInterfaces.swift; sourceTree = "<group>"; };
+		D57AC81A24A94AEF0039F9F8 /* TrainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainPresenter.swift; sourceTree = "<group>"; };
+		D57AC81B24A94AEF0039F9F8 /* TrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainViewController.swift; sourceTree = "<group>"; };
+		D57AC81C24A94AEF0039F9F8 /* TrainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainInteractor.swift; sourceTree = "<group>"; };
+		D57AC81D24A94AEF0039F9F8 /* TrainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainWireframe.swift; sourceTree = "<group>"; };
+		D57AC82424A951060039F9F8 /* StationAndTrainInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAndTrainInfo.swift; sourceTree = "<group>"; };
+		D57AC82624A955510039F9F8 /* ObjTrainPositions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjTrainPositions.swift; sourceTree = "<group>"; };
+		D57F9E8A24AA803200E2F64C /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		D57F9E8C24AA8DBB00E2F64C /* StationMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMarkerView.swift; sourceTree = "<group>"; };
+		D57F9E9424AB57D200E2F64C /* Trains.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Trains.storyboard; sourceTree = "<group>"; };
+		D57F9E9524AB57D200E2F64C /* TrainsInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainsInterfaces.swift; sourceTree = "<group>"; };
+		D57F9E9624AB57D200E2F64C /* TrainsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainsPresenter.swift; sourceTree = "<group>"; };
+		D57F9E9724AB57D200E2F64C /* TrainsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainsViewController.swift; sourceTree = "<group>"; };
+		D57F9E9824AB57D200E2F64C /* TrainsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainsInteractor.swift; sourceTree = "<group>"; };
+		D57F9E9924AB57D200E2F64C /* TrainsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainsWireframe.swift; sourceTree = "<group>"; };
+		D5AF47CD24AC7E8F00DFCECE /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		D5E2622624A79B7D00469048 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		D5E2622B24A7A53E00469048 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		D5E2622D24A7A54700469048 /* RailClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RailClient.swift; sourceTree = "<group>"; };
+		D5E2623024A7ADDB00469048 /* ObjStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjStation.swift; sourceTree = "<group>"; };
 		E4BEC846E775A95E7B28A6C6 /* Pods-Dart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dart.debug.xcconfig"; path = "Target Support Files/Pods-Dart/Pods-Dart.debug.xcconfig"; sourceTree = "<group>"; };
 		FBC299B2D6B0B359A7BD0437 /* Pods-Dart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dart.release.xcconfig"; path = "Target Support Files/Pods-Dart/Pods-Dart.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +121,7 @@
 		D535568124A7988C00AC4343 = {
 			isa = PBXGroup;
 			children = (
+				D52AF72C24AD634A00C26DDF /* README.md */,
 				D535568C24A7988C00AC4343 /* Dart */,
 				D535568B24A7988C00AC4343 /* Products */,
 				EE058405A78801CBF098CF3C /* Pods */,
@@ -87,8 +140,12 @@
 		D535568C24A7988C00AC4343 /* Dart */ = {
 			isa = PBXGroup;
 			children = (
+				D5AF47CC24AC7E7900DFCECE /* Convenience */,
+				D5E2622A24A7A52800469048 /* RailClient */,
+				D5E2622F24A7ADCE00469048 /* Models */,
 				D53556AC24A79A3000AC4343 /* ViperModules */,
 				D535568D24A7988C00AC4343 /* AppDelegate.swift */,
+				D5E2622624A79B7D00469048 /* MainTabBar.swift */,
 				D535569624A7988E00AC4343 /* Assets.xcassets */,
 				D535569824A7988E00AC4343 /* LaunchScreen.storyboard */,
 				D535569B24A7988E00AC4343 /* Info.plist */,
@@ -112,6 +169,79 @@
 		D53556AC24A79A3000AC4343 /* ViperModules */ = {
 			isa = PBXGroup;
 			children = (
+				D5E2622824A7A05900469048 /* Home */,
+				D57F9E9324AB57A400E2F64C /* Trains */,
+			);
+			path = ViperModules;
+			sourceTree = "<group>";
+		};
+		D57AC80924A7CC6F0039F9F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D57AC80A24A7CCE40039F9F8 /* ListViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D57AC80C24A7CDB30039F9F8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D57AC80D24A7CDEE0039F9F8 /* ListItemCell.swift */,
+				D57AC80F24A7DB130039F9F8 /* StationDataCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D57AC81724A94ACC0039F9F8 /* Train */ = {
+			isa = PBXGroup;
+			children = (
+				D57F9E8924AA7FF800E2F64C /* Maps */,
+				D57AC81824A94AEF0039F9F8 /* Train.storyboard */,
+				D57AC81924A94AEF0039F9F8 /* TrainInterfaces.swift */,
+				D57AC81A24A94AEF0039F9F8 /* TrainPresenter.swift */,
+				D57AC81B24A94AEF0039F9F8 /* TrainViewController.swift */,
+				D57AC81C24A94AEF0039F9F8 /* TrainInteractor.swift */,
+				D57AC81D24A94AEF0039F9F8 /* TrainWireframe.swift */,
+			);
+			path = Train;
+			sourceTree = "<group>";
+		};
+		D57F9E8924AA7FF800E2F64C /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				D57F9E8A24AA803200E2F64C /* Station.swift */,
+				D57F9E8C24AA8DBB00E2F64C /* StationMarkerView.swift */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		D57F9E9324AB57A400E2F64C /* Trains */ = {
+			isa = PBXGroup;
+			children = (
+				D57F9E9424AB57D200E2F64C /* Trains.storyboard */,
+				D57F9E9524AB57D200E2F64C /* TrainsInterfaces.swift */,
+				D57F9E9624AB57D200E2F64C /* TrainsPresenter.swift */,
+				D57F9E9724AB57D200E2F64C /* TrainsViewController.swift */,
+				D57F9E9824AB57D200E2F64C /* TrainsInteractor.swift */,
+				D57F9E9924AB57D200E2F64C /* TrainsWireframe.swift */,
+			);
+			path = Trains;
+			sourceTree = "<group>";
+		};
+		D5AF47CC24AC7E7900DFCECE /* Convenience */ = {
+			isa = PBXGroup;
+			children = (
+				D5AF47CD24AC7E8F00DFCECE /* CustomSegmentedControl.swift */,
+			);
+			path = Convenience;
+			sourceTree = "<group>";
+		};
+		D5E2622824A7A05900469048 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D57AC81724A94ACC0039F9F8 /* Train */,
+				D57AC80C24A7CDB30039F9F8 /* Cells */,
+				D57AC80924A7CC6F0039F9F8 /* Views */,
 				D53556AD24A79A4A00AC4343 /* Home.storyboard */,
 				D53556AE24A79A4A00AC4343 /* HomeInterfaces.swift */,
 				D53556AF24A79A4A00AC4343 /* HomePresenter.swift */,
@@ -119,7 +249,27 @@
 				D53556B124A79A4A00AC4343 /* HomeInteractor.swift */,
 				D53556B224A79A4A00AC4343 /* HomeWireframe.swift */,
 			);
-			path = ViperModules;
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D5E2622A24A7A52800469048 /* RailClient */ = {
+			isa = PBXGroup;
+			children = (
+				D5E2622B24A7A53E00469048 /* Router.swift */,
+				D5E2622D24A7A54700469048 /* RailClient.swift */,
+			);
+			path = RailClient;
+			sourceTree = "<group>";
+		};
+		D5E2622F24A7ADCE00469048 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D5E2623024A7ADDB00469048 /* ObjStation.swift */,
+				D57AC81124A7E0E60039F9F8 /* ObjStationData.swift */,
+				D57AC82624A955510039F9F8 /* ObjTrainPositions.swift */,
+				D57AC82424A951060039F9F8 /* StationAndTrainInfo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		EE058405A78801CBF098CF3C /* Pods */ = {
@@ -128,7 +278,6 @@
 				E4BEC846E775A95E7B28A6C6 /* Pods-Dart.debug.xcconfig */,
 				FBC299B2D6B0B359A7BD0437 /* Pods-Dart.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -192,7 +341,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D52AF72D24AD634A00C26DDF /* README.md in Resources */,
 				D53556B324A79A4A00AC4343 /* Home.storyboard in Resources */,
+				D57F9E9A24AB57D200E2F64C /* Trains.storyboard in Resources */,
+				D57AC81E24A94AEF0039F9F8 /* Train.storyboard in Resources */,
 				D535569A24A7988E00AC4343 /* LaunchScreen.storyboard in Resources */,
 				D535569724A7988E00AC4343 /* Assets.xcassets in Resources */,
 			);
@@ -247,17 +399,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E2622724A79B7D00469048 /* MainTabBar.swift in Sources */,
+				D57AC82224A94AEF0039F9F8 /* TrainInteractor.swift in Sources */,
+				D57AC81F24A94AEF0039F9F8 /* TrainInterfaces.swift in Sources */,
+				D57AC81224A7E0E60039F9F8 /* ObjStationData.swift in Sources */,
+				D57F9E9E24AB57D200E2F64C /* TrainsInteractor.swift in Sources */,
+				D57F9E9F24AB57D200E2F64C /* TrainsWireframe.swift in Sources */,
+				D57AC82724A955510039F9F8 /* ObjTrainPositions.swift in Sources */,
+				D57F9E9D24AB57D200E2F64C /* TrainsViewController.swift in Sources */,
+				D57F9E8B24AA803200E2F64C /* Station.swift in Sources */,
+				D5E2623124A7ADDB00469048 /* ObjStation.swift in Sources */,
 				D53556A724A798EF00AC4343 /* BaseWireframe.swift in Sources */,
 				D53556AB24A798EF00AC4343 /* InteractorInterface.swift in Sources */,
+				D57AC81024A7DB130039F9F8 /* StationDataCell.swift in Sources */,
 				D53556A824A798EF00AC4343 /* UIStoryboardExtension.swift in Sources */,
+				D57AC82324A94AEF0039F9F8 /* TrainWireframe.swift in Sources */,
 				D53556B724A79A4A00AC4343 /* HomeInteractor.swift in Sources */,
+				D57AC80B24A7CCE40039F9F8 /* ListViewController.swift in Sources */,
 				D535568E24A7988C00AC4343 /* AppDelegate.swift in Sources */,
 				D53556AA24A798EF00AC4343 /* ViewInterface.swift in Sources */,
+				D57AC82524A951060039F9F8 /* StationAndTrainInfo.swift in Sources */,
+				D57AC82024A94AEF0039F9F8 /* TrainPresenter.swift in Sources */,
+				D57F9E9C24AB57D200E2F64C /* TrainsPresenter.swift in Sources */,
 				D53556B624A79A4A00AC4343 /* HomeViewController.swift in Sources */,
 				D53556A924A798EF00AC4343 /* PresenterInterface.swift in Sources */,
+				D57F9E9B24AB57D200E2F64C /* TrainsInterfaces.swift in Sources */,
 				D53556B424A79A4A00AC4343 /* HomeInterfaces.swift in Sources */,
+				D57AC82124A94AEF0039F9F8 /* TrainViewController.swift in Sources */,
+				D57F9E8D24AA8DBB00E2F64C /* StationMarkerView.swift in Sources */,
+				D5AF47CE24AC7E8F00DFCECE /* CustomSegmentedControl.swift in Sources */,
 				D53556B524A79A4A00AC4343 /* HomePresenter.swift in Sources */,
+				D5E2622E24A7A54700469048 /* RailClient.swift in Sources */,
+				D57AC80E24A7CDEE0039F9F8 /* ListItemCell.swift in Sources */,
 				D53556B824A79A4A00AC4343 /* HomeWireframe.swift in Sources */,
+				D5E2622C24A7A53E00469048 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +500,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -379,7 +554,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
